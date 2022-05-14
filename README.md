@@ -47,6 +47,8 @@ func (controller *userController) Show(c *gin.Context) {
 }
 ```
 
+In order to get the correct type, you have to do typeAssertion - guide [here](https://golangcode.com/convert-interface-to-number/)
+
 ## License
 MIT
 
