@@ -24,8 +24,8 @@ Since it won't be as smart as Laravel's way. We need to define a map in order to
 ```go
 var routeModelMapping = map[string]modelMapping{
 	"entity": makeModelMapping(&models.Entity{}, "uuid"),
-  "user": makeModelMapping(&model.User{}, "uuid"),
-  // ...
+	"user": makeModelMapping(&model.User{}, "uuid"),
+	// ...
 }
 ```
 
