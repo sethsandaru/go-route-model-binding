@@ -4,12 +4,21 @@ Go Gin + gORM Route Model Binding
 
 Inspired from [Route Model Binding of Laravel](https://laravel.com/docs/9.x/routing#route-model-binding), definitely that Route Model Binding will be a big help for me/you guys to bind a model instance for specific routes.
 
+## Feature
+
 Eg: `users/:user` => Find the `User` model instance
 
 - If exists: bind it to the Gin's context via `c.Set` so you can retrieve it 
 - If not: return 404 resource not found
 
 It definitely makes our life easier, doesn't it? I hate to do like: "find record, not exists/error => return 404" in the controller, cuz it's not fun and make my controller's methods a bit longer
+
+- Q: Does it support multiple params eg: "users/:user/update-categories/:category"?
+- A: Yes
+
+## Requirements
+- Gin
+- gORM
 
 ## Inject via Middleware
 
