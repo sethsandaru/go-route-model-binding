@@ -13,7 +13,7 @@ It definitely makes our life easier, doesn't it? I hate to do like: "find record
 
 ## Inject via Middleware
 
-Middleware: [route_model_binding.go](#)
+Middleware: [route_model_binding.go](https://github.com/sethsandaru/go-route-model-binding/blob/main/route_model_binding.go)
 
 You need to set this middleware to your Gin's routes. For my use case, I added this middleware to the authenticated route groups.
 
@@ -51,4 +51,4 @@ func (controller *userController) Show(c *gin.Context) {
 MIT
 
 ## Made by
-@sethsandaru with Love
+@sethsandaru with Love - Base project: [Pheasant](https://github.com/sethsandaru/pheasant)
